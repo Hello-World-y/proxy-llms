@@ -105,58 +105,13 @@ export const ModelDefaultsById: Record<string, ModelDefaults> = {
     max_tokens: 32768,
     stream: true,
   },
-  'nvidia/z-ai/glm4.7': {
+  'nvidia/z-ai/glm-5.3-flash': {
     endpoint: '/chat/completions',
     format: 'openai',
     temperature: 0.9,
     top_p: 0.95,
-    max_tokens: 32768,
-    stream: true,
-    extra: {
-      chat_template_kwargs: {
-        enable_thinking: true,
-        clear_thinking: false,
-      },
-    },
-  },
-  'nvidia/z-ai/glm5.1': {
-    endpoint: '/chat/completions',
-    format: 'openai',
-    temperature: 0.9,
-    top_p: 0.95,
-    max_tokens: 32768,
-    stream: true,
-    supportsToolCalling: false,
-    extra: {
-      chat_template_kwargs: {
-        enable_thinking: true,
-        clear_thinking: false,
-      },
-    },
-  },
-  'nvidia/z-ai/glm-5.1': {
-    endpoint: '/chat/completions',
-    format: 'openai',
-    temperature: 0.9,
-    top_p: 0.95,
-    max_tokens: 32768,
-    maxTokensCap: 32768,
-    stream: true,
-    supportsToolCalling: true,
-    extra: {
-      chat_template_kwargs: {
-        enable_thinking: true,
-        clear_thinking: false,
-      },
-    },
-  },
-  'nvidia/z-ai/glm-5.2': {
-    endpoint: '/chat/completions',
-    format: 'openai',
-    temperature: 0.9,
-    top_p: 0.95,
-    max_tokens: 32768,
-    maxTokensCap: 32768,
+    max_tokens: 268288,
+    maxTokensCap: 268288,
     stream: true,
     supportsToolCalling: true,
     extra: {
@@ -228,13 +183,13 @@ export const ModelDefaultsById: Record<string, ModelDefaults> = {
       },
     }
   },
-  'nvidia/minimaxai/minimax-m3': {
+  'nvidia/minimaxai/minimax-m3.1-flash': {
     endpoint: '/chat/completions',
     format: 'openai',
     temperature: 1,
     top_p: 0.95,
-    max_tokens: 32768,
-    maxTokensCap: 32768,
+    max_tokens: 268288,
+    maxTokensCap: 268288,
     stream: true,
     supportsToolCalling: true,
     extra: {
@@ -243,12 +198,12 @@ export const ModelDefaultsById: Record<string, ModelDefaults> = {
       },
     }
   },
-  'nvidia/stepfun-ai/step-3.5-flash': { // no ranking
+  'nvidia/stepfun-ai/step-5-preview': { // no ranking
     endpoint: '/chat/completions',
     format: 'openai',
     temperature: 1,
     top_p: 0.9,
-    max_tokens: 26214,
+    max_tokens: 268288,
     stream: true,
   },
   'nvidia/qwen/qwen3-coder-480b-a35b-instruct': { // 62 arena ranking
