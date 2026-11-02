@@ -18,7 +18,7 @@ new_sqlite_classes = ["RateLimiterDurableObject"]
 
 [observability]
 [observability.logs]
-enabled = false
+enabled = true
 invocation_logs = true
 
 [[analytics_engine_datasets]]
