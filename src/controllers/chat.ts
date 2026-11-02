@@ -163,8 +163,8 @@ export const handleChatCompletions = async (c: Context<{ Bindings: Env }>) => {
     const modelMap: Record<string, string> = {
       "nvidia/z-ai/glm-5.3-flash": "z-ai/glm-5.3-flash",
     };
-    if (modelMap[model]) {
-      payload.model = modelMap[model];
+    if (modelMap[payloadModel]) {
+      payload.payloadModel = modelMap[payloadModel];
     }
 
     if (!providerDC) {
