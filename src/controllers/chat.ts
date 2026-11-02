@@ -164,7 +164,7 @@ export const handleChatCompletions = async (c: Context<{ Bindings: Env }>) => {
       "nvidia/z-ai/glm-5.3-flash": "z-ai/glm-5.3-flash",
     };
     if (modelMap[payloadModel]) {
-      payload.payloadModel = modelMap[payloadModel];
+      result.payload!.model = modelMap[payloadModel];
     }
 
     if (!providerDC) {
