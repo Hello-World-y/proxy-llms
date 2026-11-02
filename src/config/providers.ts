@@ -45,10 +45,10 @@ const _ProviderConfigs = {
       maxConcurrent: 3,
     },
     models: {
-      'nvidia/z-ai/glm-5.3-flash': 'z-ai/glm-5.3-flash', // 5 ranking GB200x4
+      'z-ai/glm-5.3-flash': 'z-ai/glm-5.3-flash', // 5 ranking GB200x4
 
-      'nvidia/minimaxai/minimax-m3.1-flash': 'minimaxai/minimax-m3.1-flash',
-      'nvidia/stepfun-ai/step-5-preview': 'stepfun-ai/step-5-preview'
+      'minimaxai/minimax-m3.1-flash': 'minimaxai/minimax-m3.1-flash',
+      'stepfun-ai/step-5-preview': 'stepfun-ai/step-5-preview'
     },
     supportsToolCalling: true,
   },
