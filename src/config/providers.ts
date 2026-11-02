@@ -45,24 +45,10 @@ const _ProviderConfigs = {
       maxConcurrent: 3,
     },
     models: {
-      'z-ai/glm-5.1': 'z-ai/glm-5.1', // 5 ranking GB200x4
-      'z-ai/glm-5.2': 'z-ai/glm-5.2', // 5 ranking GB200x4
-      'z-ai/glm5.1': 'z-ai/glm-5.1',
-      'zai/glm-5.1': 'z-ai/glm-5.1',
-      'zai/glm5.1': 'z-ai/glm-5.1',
+      'z-ai/glm-5.3-flash': 'z-ai/glm-5.3-flash', // 5 ranking GB200x4
 
-      'minimaxai/minimax-m3': 'minimaxai/minimax-m3',
-      'moonshotai/kimi-k3': 'moonshotai/kimi-k3',
-      'z-ai/glm4.7': 'z-ai/glm4.7',
-      'deepseek/deepseek-v4-flash-0731': 'deepseek-ai/deepseek-v4-flash-0731',
-      'deepseek/deepseek-v4-pro': 'deepseek-ai/deepseek-v4-pro', // 16 ranking
-      'minimaxai/minimax-m2.7': 'minimaxai/minimax-m2.7', // 28 ranking
-      'moonshotai/kimi-k2-thinking': 'moonshotai/kimi-k2-thinking', // 56 ranking
-      'qwen/qwen3-coder-480b-a35b-instruct': 'qwen/qwen3-coder-480b-a35b-instruct', // 62 arena ranking
-      'openai/gpt-oss-120b': 'openai/gpt-oss-120b', // no ranking
-      'stepfun-ai/step-3.5-flash': 'stepfun-ai/step-3.5-flash', // no ranking
-      'google/gemma-4-31b-it': 'google/gemma-4-31b-it', // 43 ranking
-      'poolside/laguna-xs-2.1': 'poolside/laguna-xs-2.1',
+      'minimaxai/minimax-m3.1-flash': 'minimaxai/minimax-m3.1-flash',
+      'stepfun-ai/step-5-preview': 'stepfun-ai/step-5-preview'
     },
     supportsToolCalling: true,
   },
