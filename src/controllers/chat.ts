@@ -160,6 +160,12 @@ export const handleChatCompletions = async (c: Context<{ Bindings: Env }>) => {
 
     // --- Resolve provider ---
     const providerDC = extractProviderFromModel(payloadModel)
+    const modelMap: Record<string, string> = {
+      "nvidia/z-ai/glm-5.3-flash": "z-ai/glm-5.3-flash",
+    };
+    if (modelMap[model]) {
+      payload.model = modelMap[model];
+    }
 
     if (!providerDC) {
       return c.json(createResponse(false, null, 'Invalid model format. Expected "provider/model"'), { status: 400 })
